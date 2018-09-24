@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 
 app.get('/', (req, res) => res.send("I am healthy"));
 app.get('/env', (req, res) => {
-	res.send('Env value is ');
+	res.send('Env value is '+process.env.DB_URL);
 })
 app.listen(port, () => console.log(`Listening on ${port}`));
 
