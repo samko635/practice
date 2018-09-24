@@ -9,7 +9,7 @@ const
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.get('/', (req, res) => res.send("I am healthy"));
+app.get('/', (req, res) => res.send("I am healthy~~~"));
 app.get('/env', (req, res) => {
 	res.send('Env value is '+process.env.DB_URL);
 })
